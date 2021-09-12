@@ -1,9 +1,9 @@
-[![version](https://img.shields.io/badge/version-4.2.0-green.svg)](https://github.com/steevanb/php-code-sniffs/tree/4.2.0)
+[![version](https://img.shields.io/badge/version-4.2.0-green.svg)](https://github.com/php-pp/code-sniffer/tree/4.2.0)
 [![php](https://img.shields.io/badge/php-^7.1-blue.svg)](https://php.net)
 ![Lines](https://img.shields.io/badge/code%20lines-2445-green.svg)
-![Total Downloads](https://poser.pugx.org/steevanb/php-code-sniffs/downloads)
+![Total Downloads](https://poser.pugx.org/php-pp/code-sniffer/downloads)
 
-# php-code-sniffs
+# code-sniffer
 
 Use [squizlabs/php_codesniffer](https://github.com/squizlabs/PHP_CodeSniffer) to check your code style.
 

@@ -156,23 +156,23 @@ Here is the list of enabled sniffs.
 | [Zend.Debug.CodeAnalyzer](https://github.com/squizlabs/PHP_CodeSniffer/blob/3.5.0/src/Standards/Zend/Sniffs/Debug/CodeAnalyzerSniff.php) |
 | [Zend.Files.ClosingTag](https://github.com/squizlabs/PHP_CodeSniffer/blob/3.5.0/src/Standards/Zend/Sniffs/Files/ClosingTagSniff.php) |
   
-## steevanb/php-code-sniffer
+## php-pp/code-sniffer
 
 | Sniff |
 |-------|
-| [Steevanb.Arrays.DisallowShortArraySyntaxSpaces](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Arrays/DisallowShortArraySyntaxSpacesSniff.php) |
-| [Steevanb.Classes.ClassNameIsFileName](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Classes/ClassNameIsFileNameSniff.php) |
-| [Steevanb.CodeAnalysis.EmptyStatement](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/CodeAnalysis/EmptyStatementSniff.php) |
-| [Steevanb.CodeAnalysis.StrictTypes](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/CodeAnalysis/StrictTypesSniff.php) |
-| [Steevanb.Comparators.DisallowExclamationPoint](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Comparators/DisallowExclamationPointSniff.php) |
-| [Steevanb.ControlStructures.ElseIfDeclaration](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/ControlStructures/ElseIfDeclarationSniff.php) |
-| [Steevanb.Metrics.NestingLevel](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Metrics/NestingLevelSniff.php) |
-| [Steevanb.Namespaces.UseDeclaration](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Namespaces/UseDeclarationSniff.php) |
-| [Steevanb.NamingConventions.CamelCapsFunctionName](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/NamingConventions/CamelCapsFunctionNameSniff.php) |
-| [Steevanb.NamingConventions.ValidVariableName](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/NamingConventions/ValidVariableNameSniff.php) |
-| [Steevanb.PHP.ConstantVisibility](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/PHP/ConstantVisibilitySniff.php) |
-| [Steevanb.PHP.DeprecatedFunctions](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/PHP/DeprecatedFunctionsSniff.php) |
-| [Steevanb.PHP.DisallowMultipleEmptyLines](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/PHP/DisallowMultipleEmptyLinesSniff.php) |
-| [Steevanb.PHP.DisallowSelf](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/PHP/DisallowSelfSniff.php) |
-| [Steevanb.Syntax.Concatenation](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Syntax/ConcatenationSniff.php) |
-| [Steevanb.Uses.GroupUses](https://github.com/steevanb/php-code-sniffs/blob/3.0.0/Steevanb/Sniffs/Uses/GroupUsesSniff.php) |
+| [PhpPp.Arrays.DisallowShortArraySyntaxSpaces](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Arrays/DisallowShortArraySyntaxSpacesSniff.php) |
+| [PhpPp.Classes.ClassNameIsFileName](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Classes/ClassNameIsFileNameSniff.php) |
+| [PhpPp.CodeAnalysis.EmptyStatement](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/CodeAnalysis/EmptyStatementSniff.php) |
+| [PhpPp.CodeAnalysis.StrictTypes](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/CodeAnalysis/StrictTypesSniff.php) |
+| [PhpPp.Comparators.DisallowExclamationPoint](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Comparators/DisallowExclamationPointSniff.php) |
+| [PhpPp.ControlStructures.ElseIfDeclaration](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/ControlStructures/ElseIfDeclarationSniff.php) |
+| [PhpPp.Metrics.NestingLevel](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Metrics/NestingLevelSniff.php) |
+| [PhpPp.Namespaces.UseDeclaration](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Namespaces/UseDeclarationSniff.php) |
+| [PhpPp.NamingConventions.CamelCapsFunctionName](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/NamingConventions/CamelCapsFunctionNameSniff.php) |
+| [PhpPp.NamingConventions.ValidVariableName](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/NamingConventions/ValidVariableNameSniff.php) |
+| [PhpPp.PHP.ConstantVisibility](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/PHP/ConstantVisibilitySniff.php) |
+| [PhpPp.PHP.DeprecatedFunctions](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/PHP/DeprecatedFunctionsSniff.php) |
+| [PhpPp.PHP.DisallowMultipleEmptyLines](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/PHP/DisallowMultipleEmptyLinesSniff.php) |
+| [PhpPp.PHP.DisallowSelf](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/PHP/DisallowSelfSniff.php) |
+| [PhpPp.Syntax.Concatenation](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Syntax/ConcatenationSniff.php) |
+| [PhpPp.Uses.GroupUses](https://github.com/php-pp/code-sniffer/tree/master/src/PhpPp/Sniffs/Uses/GroupUsesSniff.php) |
