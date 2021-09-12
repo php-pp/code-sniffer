@@ -1,7 +1,7 @@
 ## Installation as dependency
 
 ```bash
-composer require steevanb/php-code-sniffs ^4.0
+composer require php-pp/code-sniffer ^0.0
 ```
 
 ## Usage
@@ -10,8 +10,8 @@ composer require steevanb/php-code-sniffs ^4.0
 
 ```bash
 vendor/bin/phpcs \
-    --standard=vendor/steevanb/php-code-sniffs/src/Steevanb/ruleset.xml \
-    --report=steevanb\\PhpCodeSniffs\\Reports\\Steevanb \
+    --standard=vendor/php-pp/code-sniffer/src/PhpPp/ruleset.xml \
+    --report=PhpPp\\CodeSniffer\\Reports\\PhpPp \
     src/
 ```
 
@@ -27,7 +27,7 @@ Some phpcs parameters:
 ### Scan files need to be commited
 
 ```bash
-git status --porcelain | grep -E '^[^D\?]{2} .*\.php$' | awk '{print $2}' | xargs -n1 vendor/bin/phpcs --standard=vendor/steevanb/php-code-sniffs/ruleset.xml --report=steevanb\\PhpCodeSniffs\\Reports\\Steevanb
+git status --porcelain | grep -E '^[^D\?]{2} .*\.php$' | awk '{print $2}' | xargs -n1 vendor/bin/phpcs --standard=vendor/php-pp/code-sniffer/src/PhpPp/ruleset.xml --report=PhpPp\\CodeSniffer\\Reports\\PhpPp
 ```
 
 ### Include this ruleset in your ruleset.xml
@@ -35,6 +35,6 @@ git status --porcelain | grep -E '^[^D\?]{2} .*\.php$' | awk '{print $2}' | xarg
 ```xml
 <?xml version="1.0"?>
 <ruleset>
-    <rule ref="vendor/steevanb/php-code-sniffs/src/Steevanb/ruleset.xml"/>
+    <rule ref="vendor/php-pp/code-sniffer/src/PhpPp/ruleset.xml"/>
 </ruleset>
 ```

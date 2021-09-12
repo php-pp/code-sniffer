@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Steevanb">
+<ruleset name="PhpPp">
     <description>PHP++ code styles</description>
 
     <arg name="extensions" value="php"/>
