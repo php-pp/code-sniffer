@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\ControlStructures;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\ControlStructures;
 
 use PHP_CodeSniffer\{
     Sniffs\Sniff,

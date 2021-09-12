@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\Metrics;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Metrics;
 
 use PHP_CodeSniffer\{
     Files\File,
