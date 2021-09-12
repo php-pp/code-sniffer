@@ -13,7 +13,7 @@ use PHP_CodeSniffer\{
 class ConcatenationSniff implements Sniff
 {
     /** @return int[] */
-    public function register()
+    public function register(): array
     {
         return [T_STRING_CONCAT];
     }

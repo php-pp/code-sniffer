@@ -1,13 +1,4 @@
 <?php
-/**
- * Fork from squizlabs/php_codesniffer/src/Standards/PSR2/Sniffs/ControlStructures/ElseIfDeclarationSniff.php
- * Change warning into error
- * Verifies that there are no else if statements (elseif should be used instead).
- *
- * @author    Greg Sherwood <gsherwood@squiz.net>
- * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)
- * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
- */
 
 declare(strict_types=1);
 
@@ -18,6 +9,11 @@ use PHP_CodeSniffer\{
     Files\File
 };
 
+/**
+ * Fork from squizlabs/php_codesniffer/src/Standards/PSR2/Sniffs/ControlStructures/ElseIfDeclarationSniff.php
+ * Change warning into error
+ * Verifies that there are no else if statements (elseif should be used instead)
+ */
 class ElseIfDeclarationSniff implements Sniff
 {
     public function register(): array
@@ -28,7 +24,7 @@ class ElseIfDeclarationSniff implements Sniff
         ];
     }
 
-    /** @param int $stackPtr  The position of the current token in the stack passed in $tokens. */
+    /** @param int $stackPtr */
     public function process(File $phpcsFile, $stackPtr): void
     {
         $tokens = $phpcsFile->getTokens();

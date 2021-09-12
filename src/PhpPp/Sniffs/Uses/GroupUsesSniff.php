@@ -21,8 +21,8 @@ use PHP_CodeSniffer\{
  *     Response
  * };
  *
- * Call addFirstLevelPrefix() to force this namespace to be regrouped at 1st level
- * Call addThirdLevelPrefix() to force this namespace to be regrouped at 3rd level
+ * Call addFirstLevelPrefix() to force this namespace to be regrouped on 1st level
+ * Call addThirdLevelPrefix() to force this namespace to be regrouped on 3rd level
  */
 class GroupUsesSniff implements Sniff
 {

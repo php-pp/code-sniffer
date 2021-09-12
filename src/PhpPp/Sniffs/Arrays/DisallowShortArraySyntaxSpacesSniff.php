@@ -9,7 +9,7 @@ use PHP_CodeSniffer\{
     Sniffs\Sniff
 };
 
-/** Disallow spaces after [ and before ] */
+/** Disallow spaces after [ and before ] with short aarray syntaxe (example: $array = [1, 2];) */
 class DisallowShortArraySyntaxSpacesSniff implements Sniff
 {
     public function register(): array
@@ -28,8 +28,7 @@ class DisallowShortArraySyntaxSpacesSniff implements Sniff
         }
     }
 
-    /** @param int $stackPtr */
-    protected function processOpenShortArray(File $phpcsFile, $stackPtr): self
+    protected function processOpenShortArray(File $phpcsFile, int $stackPtr): self
     {
         $nextToken = $phpcsFile->getTokens()[$stackPtr + 1];
         if ($nextToken['code'] === T_WHITESPACE && substr($nextToken['content'], 0, 1) !== "\n") {
@@ -43,8 +42,7 @@ class DisallowShortArraySyntaxSpacesSniff implements Sniff
         return $this;
     }
 
-    /** @param int $stackPtr */
-    protected function processCloseShortArray(File $phpcsFile, $stackPtr): self
+    protected function processCloseShortArray(File $phpcsFile, int $stackPtr): self
     {
         $previousToken = $phpcsFile->getTokens()[$stackPtr - 1];
         $previousToken2 = $phpcsFile->getTokens()[$stackPtr - 2];

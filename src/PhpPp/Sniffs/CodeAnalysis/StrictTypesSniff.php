@@ -15,9 +15,6 @@ use PHP_CodeSniffer\{
  */
 class StrictTypesSniff implements Sniff
 {
-    /** @var bool[] */
-    protected $strictTypes = [];
-
     public function register(): array
     {
         return [T_OPEN_TAG];
@@ -30,10 +27,10 @@ class StrictTypesSniff implements Sniff
         $found = false;
         $strictTypesEnabled = false;
 
-        if ($declare !== false) {
+        if (is_int($declare)) {
             $nextString = $phpcsFile->findNext(T_STRING, $declare);
 
-            if ($nextString !== false) {
+            if (is_int($nextString)) {
                 if (strtolower($tokens[$nextString]['content']) === 'strict_types') {
                     $found = true;
                     if (
@@ -61,8 +58,7 @@ class StrictTypesSniff implements Sniff
             );
         }
 
-        // Skip the rest of the file so we don't pick up additional
-        // open tags, typically embedded in HTML.
+        // Skip the rest of the file, so we don't pick up additional open tags, typically embedded in HTML
         return $phpcsFile->numTokens;
     }
 }
