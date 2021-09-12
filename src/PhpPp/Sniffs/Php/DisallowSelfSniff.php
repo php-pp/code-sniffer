@@ -1,12 +1,12 @@
 <?php
 /**
- * Disallow usage of self, whenever it's possible. Use static instead
+ * Disallow usage of self, whenever it's possible. Use static instead.
  * @see https://www.php.net/manual/en/language.oop5.late-static-bindings.php
  */
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\PHP;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Php;
 
 use PHP_CodeSniffer\{
     Files\File,

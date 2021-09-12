@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\NamingConventions;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\NamingConventions;
 
 use PHP_CodeSniffer\{
     Files\File,

@@ -1,11 +1,11 @@
 {
-    "name": "steevanb/php-code-sniffs",
-    "description": "Steevan BARBOYON coding standards.",
-    "license": "MIT",
+    "name": "php-pp/code-sniffer",
+    "description": "Code styles for PHP++",
     "type": "library",
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
-            "steevanb\\PhpCodeSniffs\\": "src/"
+            "PhpPp\\CodeSniffer\\": "src/"
         }
     },
     "require": {

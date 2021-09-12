@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\Uses;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Uses;
 
 use PHP_CodeSniffer\{
     Files\File,

@@ -89,7 +89,7 @@
     <rule ref="PSR2">
         <exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations"/>
         <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
-        <!-- Replaced by steevanb\PhpCodeSniffs\Steevanb\Sniffs\ControlStructures\ElseIfDeclarationSniff -->
+        <!-- Replaced by PhpPp\CodeSniffer\PhpPp\Sniffs\ControlStructures\ElseIfDeclarationSniff -->
         <exclude name="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed"/>
     </rule>
     <rule ref="Generic.Files.LineLength">

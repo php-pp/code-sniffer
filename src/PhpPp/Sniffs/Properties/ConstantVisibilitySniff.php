@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\Properties;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Properties;
 
-use PHP_CodeSniffer\Sniffs\Sniff;
-use PHP_CodeSniffer\Files\File;
-use PHP_CodeSniffer\Util\Tokens;
+use PHP_CodeSniffer\{
+    Sniffs\Sniff,
+    Files\File,
+    Util\Tokens
+};
 
 /**
  * Mostly copied from PHP_CodeSniffer\Standards\PSR12\Sniffs\Properties\ConstantVisibilitySniff

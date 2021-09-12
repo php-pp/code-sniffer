@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\Arrays;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Arrays;
 
 use PHP_CodeSniffer\{
     Files\File,

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Steevanb\Sniffs\Comparators;
+namespace PhpPp\CodeSniffer\PhpPp\Sniffs\Comparators;
 
 use PHP_CodeSniffer\{
     Files\File,

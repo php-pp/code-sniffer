@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace steevanb\PhpCodeSniffs\Reports;
+namespace PhpPp\CodeSniffer\Reports;
 
 use PHP_CodeSniffer\{
     Files\File,
@@ -10,7 +10,7 @@ use PHP_CodeSniffer\{
     Util\Timing
 };
 
-class Steevanb implements Report
+class PhpPp implements Report
 {
     /** @var string[] */
     protected static $replacesInPath = [];
