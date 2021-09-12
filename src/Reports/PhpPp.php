@@ -213,12 +213,10 @@ class PhpPp implements Report
 
     protected function getStartTime(): float
     {
-        // thanks to not add getter ...
+        // thanks to not add getter...
         $reflection = new \ReflectionProperty(Timing::class, 'startTime');
         $reflection->setAccessible(true);
-        $return = $reflection->getValue();
-        $reflection->setAccessible(false);
 
-        return $return;
+        return $reflection->getValue();
     }
 }

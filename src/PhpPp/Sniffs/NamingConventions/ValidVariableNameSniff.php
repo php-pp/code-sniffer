@@ -19,7 +19,7 @@ class ValidVariableNameSniff extends AbstractVariableSniff
     /** @var string[] */
     protected static $allowedVariableNames = [];
 
-    public static function addAllowedVariableName(string $name)
+    public static function addAllowedVariableName(string $name): void
     {
         static::$allowedVariableNames[] = $name;
     }

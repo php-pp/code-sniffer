@@ -29,7 +29,7 @@ class UseDeclarationSniff implements Sniff
 
         $tokens = $phpcsFile->getTokens();
 
-        // One space after the use keyword.
+        // One space after the use keyword
         if ($tokens[($stackPtr + 1)]['content'] !== ' ') {
             $error = 'There must be a single space after the USE keyword';
             $fix   = $phpcsFile->addFixableError($error, $stackPtr, 'SpaceAfterUse');
@@ -38,7 +38,7 @@ class UseDeclarationSniff implements Sniff
             }
         }
 
-        // Make sure this USE comes after the first namespace declaration.
+        // Make sure this USE comes after the first namespace declaration
         $prev = $phpcsFile->findPrevious(T_NAMESPACE, ($stackPtr - 1));
         if ($prev !== false) {
             $first = $phpcsFile->findNext(T_NAMESPACE, 1);
@@ -106,11 +106,11 @@ class UseDeclarationSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        // Ignore USE keywords inside closures.
+        // Ignore USE keywords inside closures
         $next = $phpcsFile->findNext(T_WHITESPACE, ($stackPtr + 1), null, true);
         if ($tokens[$next]['code'] === T_OPEN_PARENTHESIS) {
             $return = true;
-        // Ignore USE keywords for traits.
+        // Ignore USE keywords for traits
         } elseif ($phpcsFile->hasCondition($stackPtr, [T_CLASS, T_TRAIT]) === true) {
             $return = true;
         } else {
